@@ -38,7 +38,7 @@ wobei [opt] optionale parameter auf ein folder (defaultwert is ".", also das cur
 Damit wir anderen usern (oder auch Projekten) nicht in die Quere kommen installieren wir Conda, eine Virtualisierungsumgebung für Python. Diese sorgt dafür, dass pro Softwareprojekt separete Dependencies realisiert werden können, ohne dass es zwischen projekten zu Konflikten kommt. Ladet hierzu den 64bit Linux installer von der [Conda homepage](https://docs.conda.io/en/latest/miniconda.html) und installiert diesen via `bash` im user space:
 
 ```
-bash ./miniconda-installer-file.sh
+bash ./downloaded/miniconda-installer-file.sh
 ```
 
 Folgt den Prozess, und initialisiert Conda am Ende der Installation. Sollte alles geklappt haben wird beim nächsten geöffneten Terminal (Alt+Ctrl+T) der Text `(base)` zu Beginn der Kommandozeile stehen. Dies ist der Indikator dafür, dass ihr euch gerade in der Basis-Umgebung befindet.
@@ -63,7 +63,7 @@ Stellt nun sicher, dass ihr euch in der virtuellen Umgebung `praktikum` befindet
 pip install jupyterlab
 ```
 
-`pip` ist ein Paketverwaltungstool für Python, welches es sehr angenehm und einfach macht, Pakete und Abnhängigkeiten aufzulösen. Als nächstes werfteinen blick auf [./0_setup/requirements.txt](./0_setup/requirements.txt). Öffnet die Datei mit VSCode oder einem anderen editor eurer wahl, oder einfach mit `cat` über das terminal.
+`pip` ist ein Paketverwaltungstool für Python, welches es sehr angenehm und einfach macht, Pakete und Abnhängigkeiten aufzulösen. Als nächstes werft einen blick auf [./requirements.txt](./requirements.txt). Öffnet die Datei mit VSCode oder einem anderen editor eurer wahl, oder einfach mit `cat` über das terminal.
 Requirements-Dateien sind eine alternative Möglichkeit, Abhängigkeiten bzw benötigte Pakete, die installiert werden sollen, zu sammeln.
 
 #### Macht euch Vertraut
@@ -81,6 +81,6 @@ und testet anschließend, ob alle installierten module in einer Python-Laufzeit 
 
 # Schritt 1: Los geht's
 
-Als nächstes geht es auch schon los mit ML und Datenalyse. Hierzu wechseln wir in die JupyterLab - Umgebung. Stellt vor dem starte sicher, dass ihr euch (1) mit dem Terminal im folder befindet, wo sich unter anderem das Jupyter Notebook [1_2d-machine-learning.ipynb](1_2d-machine-learning.ipynb) befindet (worin es weiter geht), und die virtuelle Praktikums-umgebung aktiviert ist, bevor ihr JupyterLab startet.
+Als nächstes geht es auch schon los mit ML und Datenalyse. Hierzu wechseln wir in die JupyterLab - Umgebung. Stellt vor dem starte sicher, dass ihr euch (1) mit dem Terminal im folder befindet, wo sich unter anderem das Jupyter Notebook [../1_2d-ml/1_2d-machine-learning.ipynb](../1_2d-ml/1_2d-machine-learning.ipynb) befindet (worin es weiter geht. erhaltet ihr per Email), und (2) die virtuelle Praktikums-umgebung aktiviert ist, bevor ihr JupyterLab startet.
 
 
