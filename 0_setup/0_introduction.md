@@ -78,6 +78,9 @@ pip install -r ./pfad/zur/requirements/datei
 ```
 und testet anschließend, ob alle installierten module in einer Python-Laufzeit importiert werden können, dh, öffnet ein Terminal, startet python mit dem Befehl `python`, und versucht der reihe nach alle Pakete mittels des Befehls `import [paketname]` zu importieren. Wo stoßt ihr auf Hürden? Wie können diese behoben werden? Sobald ihr alle Module erfolgreicht importiert habt beherrscht ihr die fundamentalen Fähigkeiten eines Softwarentwicklers: Google und (vermutlich) StackOverflow zu nutzen.
 
+![stackoverflow](./0_resources/stckvrflw.jpeg)
+
+
 
 # Schritt 1: Los geht's
 
