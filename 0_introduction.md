@@ -4,10 +4,11 @@ In den nächsten Tagen werden euch einige hands-on Anwendungen dessen, was die M
 
 ## Was ist Maschinelles Lernen?
 
-Kurz zusammen gefasst beschreibt Maschinelles Lernen das datengetriebene Anpassen oder Optimieren mathematischer Funktionen, um ein bestimmtes Ziel zu erreichen.
+Kurz zusammen gefasst beschreibt Maschinelles Lernen das datengetriebene Anpassen oder Optimieren mathematischer Funktionen, um ein bestimmtes Ziel zu erreichen oder eine bestimmte Aufgabe zu lösen.
+
 Die Struktur und der Aufbau dieser Funktionen ist in der Regel vorgegeben, oder zumindest auf eine gewisse Kategorie eingeschränkt, zb. Abhängig davon ob man eine Support Vector Maschine mit Kernel-Funktion trainieren möchte, oder eine einfache lineare Funktion deren Gewichte angepasst werden müssen, oder ein komplexes und tiefes Neuronales Netz.
 
-Grundsätzlich besteht der Unterschied zwischen klassischer Programmierung und KI darin, dass man bei ersterem die Daten kennt, als auch die Lösungswege (Regeln) um die gewünschten Antworten zu erhalten. Beim Maschinellen Lernen hat man Daten, und zu einigen Datenpunkten die gewünschten Antworten, aber keine explizit bekannten oder umsetzbaren Regeln. Das ziel ist es, anhand der verfügbaren Beispieldaten einen Prädiktor zu trainieren, welcher Regeln und Transformationen erlernt, um das durch die Daten beschriebene Problem möglichst gut zu lernen. Das daraus entstehende sogenannte "Modell" (ie der Prädiktor) kann dann genutzt werden, um Antworten auf neuen Daten vorherzusagen. Welche Vor- und Nachteile, sowie Eigentschaften dieses Vorgehen hat werden wir hoffentlich im Rahmen des Praktikums noch kennen und verstehen lernen.
+Grundsätzlich besteht der Unterschied zwischen klassischer Programmierung und KI darin, dass man bei ersterem die Daten kennt, als auch die Lösungswege (Regeln) um die gewünschten Antworten zu erhalten. Beim Maschinellen Lernen hat man Daten, und zu einigen Datenpunkten die gewünschten Antworten, aber keine explizit bekannten oder umsetzbaren Regeln. Das Ziel ist es, anhand der verfügbaren Beispieldaten einen Prädiktor zu trainieren, welcher Regeln und Transformationen erlernt, um das durch die Daten beschriebene Problem möglichst gut zu lernen. Das daraus entstehende sogenannte "Modell" (ie der Prädiktor) kann dann genutzt werden, um Antworten auf neuen Daten vorherzusagen. Welche Vor- und Nachteile, sowie Eigenschaften dieses Vorgehen hat werden wir hoffentlich im Rahmen des Praktikums noch kennen und verstehen lernen.
 
 ![programming vs ml](./0_resources/programming_vs_ml.png)
 
@@ -48,7 +49,7 @@ Folgt den Prozess, und initialisiert Conda am Ende der Installation. Sollte alle
 Nun kommen wir zum letzten Schritt, bevor es ans Maschinelle Lernen geht, dem Einrichten *der* virtuellen Umgebung für euer Projekt. Wir wollen Python3 nutzen, und legen daher mit Conda eine neue Virtuelle Umgebung mit dem folgenden Befehl an, welche ein "Realitätsblase" einer Python-Instanz mit dem Namen "praktikum" auf eurem Rechner anlegt:
 
 ```
-conda create env -n praktikum Python=3
+conda create -n praktikum Python=3
 ```
 
 Sollte der Befehl erfolgreich durchlaufen seht ihr am Ende im Terminal die Instruktionen zur aktivierung der Umgebung. Aktiviert diese nun, und seht einen string `(praktikum)` am Anfang der Kommandozeile. Gratulation, ihr habt soeben eure Praktikumsrealitätsblase betreten. Hier könnt ihr wild mit den Python-Paketen experimentieren, ohne permanenten Schaden am Linux-Betriebssystem zu verursachen. Im Zweifel werfen wir die `praktikum`-Umgebung einfach weg und bauen sie von Grund auf neu. Eure Dateien werden dabei nicht betroffen sein.
@@ -78,5 +79,8 @@ pip install -r ./pfad/zur/requirements/datei
 und testet anschließend, ob alle installierten module in einer Python-Laufzeit importiert werden können, dh, öffnet ein Terminal, startet python mit dem Befehl `python`, und versucht der reihe nach alle Pakete mittels des Befehls `import [paketname]` zu importieren. Wo stoßt ihr auf Hürden? Wie können diese behoben werden? Sobald ihr alle Module erfolgreicht importiert habt beherrscht ihr die fundamentalen Fähigkeiten eines Softwarentwicklers: Google und (vermutlich) StackOverflow zu nutzen.
 
 
+# Schritt 1: Los geht's
+
+Als nächstes geht es auch schon los mit ML und Datenalyse. Hierzu wechseln wir in die JupyterLab - Umgebung. Stellt vor dem starte sicher, dass ihr euch (1) mit dem Terminal im folder befindet, wo sich unter anderem das Jupyter Notebook [1_2d-machine-learning.ipynb](1_2d-machine-learning.ipynb) befindet (worin es weiter geht), und die virtuelle Praktikums-umgebung aktiviert ist, bevor ihr JupyterLab startet.
 
 
